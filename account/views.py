@@ -3,6 +3,10 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
 
+def homepage(req):
+	context = {}
+	return render(req,'main/homepage.html',context)
+
 #@login_required(login_url='login')
 def register_page(req):
 	context = {}

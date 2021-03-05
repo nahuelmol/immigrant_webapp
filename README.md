@@ -1,8 +1,9 @@
 # immigrant_webapp
-In this i wanna add simplicity at trip posibilities. Specificaly in immigration's subject.
+In this i wanna add simplicity at trip's posibilities. Specificaly in immigration's subject.
 
 ## user
-The users can be persons who wanna go ojtside of their country  or even some insiltitution available hite, educate or represents fireigners.
+The users can be persons who wanna go outside of their country  or even some available institution  hire, educate or represents fireigners.
+
 Mainly i called it **users** and **monitors**.
 
 ## purpose

@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from account.views import login_page
-from django.decorators import login_requiered
+from django.contrib.auth.decorators import login_required
 
-def homepage(req):
+#@login_required(login_url='login')
+def service(req):
 	context = {}
-	return render(req,'main/homepage.html',context)
+	return render(req,'process/starting_service.html',context)
 
-#@login_requiered(login_url='login')
-def service_params(req):
+
+def global_info(req):
 	context = {}
-	return render(req,'process/manuparams.html',context)
+	return render(req,'process/global_info.html',context)
