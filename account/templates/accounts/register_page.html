@@ -1,9 +1,32 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
 <html>
 	<head>
-		
+		<title>Registration</title>
 	</head>
 	<body>
-		<h1>Register</h1>
-		<a href="{% url 'account:homepage' %}">homepage</a>
+		<div class="content">
+
+			<form method="POST">
+				{% csrf_token %} 
+				<div id="elements_here" class="container">
+					{{ form.name.label}}
+					<input type="text" name="name" class="form-control">
+				</div>
+				<div id="elements_here" class="container">
+					{{ form.password.label}}
+					<input type="password" name="password" class="form-control">
+				</div>
+				<div id="elements_here">
+					<input  class="btn btn-info" type="submit">
+				</div>
+				{{ form.errors }}
+			</form>
+
+			<h1>Register</h1>
+			<a href="{% url 'account:homepage' %}">Homepage</a>
+			<a href="{% url 'account:login' %}">Login</a>
+		</div>
+		
 	</body>
 </html>

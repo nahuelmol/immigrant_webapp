@@ -1,0 +1,32 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+	<div class="content">
+	
+		{% block content %}
+			<form method="POST">
+				{% csrf_token %} 
+				<div id="elements_here" class="container">
+					{{ form.name.label}}
+					<input type="text" name="name" class="form-control">
+				</div>
+				<div id="elements_here" class="container">
+					{{ form.password.label}}
+					<input type="password" name="password" class="form-control">
+				</div>
+				<div id="elements_here">
+					<input  class="btn btn-info" type="submit">
+				</div>
+				{{ form.errors }}
+			</form>
+		{% endblock  %}
+
+		<p>If you don't even have an account then</p>
+		<a href="{% url 'account:register' %}">Create an account</a>
+	</div>
+</body>
+</html>
