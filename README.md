@@ -6,7 +6,7 @@ The users can be persons who wanna go outside of their country  or even some ava
 
 Mainly i called it **users** and **monitors**.
 
-## api consumed
+## api consumption
 i'm going to use some common apis of public access to be actualized in terms of countries availables to travel. Which politics are concerned in the treat with his foreigners
 
 ## purpose
